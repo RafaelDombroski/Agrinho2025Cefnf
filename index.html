@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Agrinho 2025 - Unidos pelo Progresso: Campo e Cidade</title>
+    <meta
+      name="description"
+      content="Site educacional sobre a conexão fundamental entre o campo e a cidade, inspirado no Projeto Agrinho 2025."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icons">
+              <i class="fas fa-seedling text-green"></i>
+              <i class="fas fa-building text-blue"></i>
+            </div>
+            <h1>Projeto Agrinho 2025</h1>
+          </div>
+          <nav class="nav">
+            <a href="#campo" class="nav-link text-green">Campo</a>
+            <a href="#cidade" class="nav-link text-blue">Cidade</a>
+            <a href="#festa" class="nav-link text-purple">Festa</a>
+            <a href="#interativo" class="nav-link text-orange">Quiz</a>
+          </nav>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#campo" class="mobile-nav-link text-green">Campo</a>
+      <a href="#cidade" class="mobile-nav-link text-blue">Cidade</a>
+      <a href="#festa" class="mobile-nav-link text-purple">Festa</a>
+      <a href="#interativo" class="mobile-nav-link text-orange">Quiz</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Unidos pelo Progresso:
+            <span class="text-green">Campo</span>
+            <span class="text-gray">&</span>
+            <span class="text-blue">Cidade</span>
+          </h1>
+
+          <p class="hero-description fade-in">
+            O Projeto Agrinho 2025 celebra a conexão fundamental entre o campo e
+            a cidade. Descubra como esses dois mundos se complementam, crescem
+            juntos e constroem um futuro próspero através da cooperação,
+            tradição e inovação.
+          </p>
+
+          <div class="hero-cards">
+            <div class="hero-card">
+              <p>🌱 Agricultura Sustentável</p>
+            </div>
+            <div class="hero-card">
+              <p>🏙️ Desenvolvimento Urbano</p>
+            </div>
+            <div class="hero-card">
+              <p>🤝 Cooperação Mútua</p>
+            </div>
+          </div>
+
+          <div class="scroll-arrow">
+            <button
+              class="scroll-btn"
+              data-target="campo"
+              aria-label="Rolar para a próxima seção"
+            >
+              <i class="fas fa-chevron-down bounce"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campo Section -->
+    <section id="campo" class="campo-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-green-dark">
+            🌿 O Campo: Raiz da Vida
+          </h2>
+          <p class="section-description text-green-dark">
+            O meio rural é o berço da produção, da tradição e da
+            sustentabilidade. É onde nasce o alimento que chega à mesa das
+            famílias urbanas.
+          </p>
+        </div>
+
+        <div class="campo-content">
+          <div class="campo-image">
+            <img
+              src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&h=400&fit=crop&crop=center"
+              alt="Paisagem rural com plantações"
+              class="rounded-image"
+            />
+          </div>
+          <div class="campo-info">
+            <div class="info-item">
+              <i class="fas fa-sun text-yellow"></i>
+              <span class="text-green-dark font-semibold"
+                >Energia Solar Natural</span
+              >
+            </div>
+            <div class="info-item">
+              <i class="fas fa-tint text-blue"></i>
+              <span class="text-green-dark font-semibold"
+                >Recursos Hídricos</span
+              >
+            </div>
+            <p class="text-green-dark">
+              O campo utiliza recursos naturais de forma sustentável, produzindo
+              não apenas alimentos, mas também energia limpa e matérias-primas
+              essenciais para a vida urbana.
+            </p>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-seedling text-green feature-icon"></i>
+            <h3 class="text-green-dark">Agricultura</h3>
+            <p class="text-green">
+              Produção de alimentos que nutrem as cidades
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-tree text-green feature-icon"></i>
+            <h3 class="text-green-dark">Natureza</h3>
+            <p class="text-green">Preservação ambiental e biodiversidade</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-tractor text-green feature-icon"></i>
+            <h3 class="text-green-dark">Tecnologia Rural</h3>
+            <p class="text-green">Inovação aplicada ao campo moderno</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-heart text-green feature-icon"></i>
+            <h3 class="text-green-dark">Saberes Tradicionais</h3>
+            <p class="text-green">Conhecimento passado entre gerações</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cidade Section -->
+    <section id="cidade" class="cidade-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-blue-dark">
+            🏙️ A Cidade: Centro de Inovação
+          </h2>
+          <p class="section-description text-blue-dark">
+            O ambiente urbano concentra tecnologia, serviços e oportunidades,
+            sendo o principal consumidor dos produtos do campo.
+          </p>
+        </div>
+
+        <div class="cidade-content">
+          <div class="cidade-info">
+            <div class="info-item">
+              <i class="fas fa-bolt text-yellow"></i>
+              <span class="text-blue-dark font-semibold"
+                >Energia e Infraestrutura</span
+              >
+            </div>
+            <div class="info-item">
+              <i class="fas fa-exchange-alt text-green"></i>
+              <span class="text-blue-dark font-semibold"
+                >Intercâmbio Comercial</span
+              >
+            </div>
+            <p class="text-blue-dark">
+              A cidade oferece mercado, tecnologia e serviços especializados que
+              beneficiam o desenvolvimento rural, criando um ciclo virtuoso de
+              crescimento mútuo.
+            </p>
+          </div>
+          <div class="cidade-image">
+            <img
+              src="https://i.postimg.cc/W3101GpC/dji-0040.jpg"
+              alt="Paisagem urbana moderna"
+              class="rounded-image"
+            />
+          </div>
+        </div>
+
+        <div class="interdependencia-card">
+          <h3 class="text-gray-dark">Interdependência Campo-Cidade</h3>
+          <div class="interdependencia-grid">
+            <div class="interdependencia-item">
+              <div class="interdependencia-icon bg-green-light">
+                <span>🥕</span>
+              </div>
+              <h4 class="text-green-dark">Alimentos</h4>
+              <p class="text-gray">Do campo para a mesa urbana</p>
+            </div>
+            <div class="interdependencia-item">
+              <div class="interdependencia-icon bg-yellow-light">
+                <span>⚡</span>
+              </div>
+              <h4 class="text-yellow-dark">Energia</h4>
+              <p class="text-gray">Recursos naturais e renováveis</p>
+            </div>
+            <div class="interdependencia-item">
+              <div class="interdependencia-icon bg-blue-light">
+                <span>👥</span>
+              </div>
+              <h4 class="text-blue-dark">Mão de Obra</h4>
+              <p class="text-gray">Intercâmbio de conhecimentos</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-mobile-alt text-blue feature-icon"></i>
+            <h3 class="text-blue-dark">Tecnologia</h3>
+            <p class="text-blue">Inovação e conectividade digital</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-shopping-cart text-blue feature-icon"></i>
+            <h3 class="text-blue-dark">Consumo</h3>
+            <p class="text-blue">Mercado para produtos rurais</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-building text-blue feature-icon"></i>
+            <h3 class="text-blue-dark">Serviços</h3>
+            <p class="text-blue">Educação, saúde e infraestrutura</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-users text-blue feature-icon"></i>
+            <h3 class="text-blue-dark">Comunidade</h3>
+            <p class="text-blue">Diversidade e oportunidades</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Festa do Lavrador Section -->
+    <section id="festa" class="festa-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-purple-dark">
+            🎉 Festa do Lavrador: União em Celebração
+          </h2>
+          <p class="section-description text-purple-dark">
+            A 43ª Festa do Lavrador de São João do Triunfo - PR (2025) é um
+            exemplo perfeito de como o campo e a cidade se unem em celebração,
+            cultura e progresso.
+          </p>
+        </div>
+
+        <div class="festa-main-card">
+          <div class="festa-info">
+            <div class="festa-meta">
+              <div class="meta-item">
+                <i class="fas fa-calendar text-purple"></i>
+                <span class="text-purple-dark font-semibold">2025</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-map-marker-alt text-purple"></i>
+                <span class="text-purple-dark font-semibold"
+                  >São João do Triunfo - PR</span
+                >
+              </div>
+            </div>
+            <h3 class="text-gray-dark">Uma Tradição que Une Gerações</h3>
+            <p class="text-gray-dark">
+              Esta festa tradicional valoriza os agricultores e suas
+              contribuições, atraindo visitantes urbanos que descobrem a riqueza
+              da cultura rural.
+            </p>
+            <p class="text-gray-dark">
+              É um momento único onde a cidade vai ao campo e o campo se
+              apresenta à cidade, fortalecendo laços e promovendo o
+              desenvolvimento regional.
+            </p>
+          </div>
+          <div class="festa-image">
+            <img
+              src="https://i.postimg.cc/MGxyhkCW/Save-Clip-App-499829683-1922123078560966-8139949088661045489-n.jpgs"
+              alt="Festa do Lavrador"
+              class="rounded-image"
+            />
+          </div>
+        </div>
+
+        <div class="atracoes-grid">
+          <div class="atracao-card">
+            <i class="fas fa-music text-purple feature-icon"></i>
+            <h3 class="text-purple-dark">Shows Musicais</h3>
+            <p class="text-purple">Ana Castela e Luan Pereira</p>
+          </div>
+          <div class="atracao-card">
+            <i class="fas fa-trophy text-purple feature-icon"></i>
+            <h3 class="text-purple-dark">Provas Campeiras</h3>
+            <p class="text-purple">Competições tradicionais</p>
+          </div>
+          <div class="atracao-card">
+            <i class="fas fa-tractor text-purple feature-icon"></i>
+            <h3 class="text-purple-dark">Tratoraço</h3>
+            <p class="text-purple">Desfile de máquinas agrícolas</p>
+          </div>
+          <div class="atracao-card">
+            <i class="fas fa-utensils text-purple feature-icon"></i>
+            <h3 class="text-purple-dark">Praça de Alimentação</h3>
+            <p class="text-purple">Sabores do campo e da cidade</p>
+          </div>
+        </div>
+
+        <div class="impacto-card">
+          <h3 class="text-purple-dark">
+            Impacto da Festa na Integração Campo-Cidade
+          </h3>
+          <div class="impacto-grid">
+            <div class="impacto-item">
+              <div class="impacto-icon">
+                <span>🚌</span>
+              </div>
+              <h4 class="text-purple-dark">Turismo Rural</h4>
+              <p class="text-purple">
+                Milhares de visitantes urbanos descobrem o campo
+              </p>
+            </div>
+            <div class="impacto-item">
+              <div class="impacto-icon">
+                <span>💰</span>
+              </div>
+              <h4 class="text-purple-dark">Economia Local</h4>
+              <p class="text-purple">
+                Movimentação financeira beneficia toda a região
+              </p>
+            </div>
+            <div class="impacto-item">
+              <div class="impacto-icon">
+                <span>🤝</span>
+              </div>
+              <h4 class="text-purple-dark">Intercâmbio Cultural</h4>
+              <p class="text-purple">Troca de conhecimentos e experiências</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="interativo" class="quiz-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-orange-dark">
+            💬 Teste Seus Conhecimentos
+          </h2>
+          <p class="section-description text-orange-dark">
+            Descubra o quanto você aprendeu sobre a conexão campo-cidade!
+          </p>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+          <div class="quiz-progress">
+            <div class="progress-info">
+              <span class="text-gray"
+                >Pergunta <span id="currentQuestion">1</span> de
+                <span id="totalQuestions">3</span></span
+              >
+              <span class="text-gray"
+                >Pontuação: <span id="currentScore">0</span>/<span
+                  id="totalScore"
+                  >3</span
+                ></span
+              >
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+
+          <div class="quiz-content">
+            <h3 class="quiz-question" id="quizQuestion"></h3>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div
+              class="quiz-explanation"
+              id="quizExplanation"
+              style="display: none"
+            ></div>
+            <div class="quiz-actions">
+              <button class="quiz-btn" id="submitBtn">
+                Confirmar Resposta
+              </button>
+              <button class="quiz-btn" id="nextBtn" style="display: none">
+                Próxima Pergunta
+              </button>
+              <button class="quiz-btn" id="resultBtn" style="display: none">
+                Ver Resultado
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-result" id="quizResult" style="display: none">
+          <div class="result-content">
+            <div class="result-emoji" id="resultEmoji">🎉</div>
+            <h3 class="result-title" id="resultTitle">Quiz Concluído!</h3>
+            <p class="result-message" id="resultMessage"></p>
+            <button class="quiz-btn" id="resetBtn">
+              <i class="fas fa-redo"></i> Fazer Quiz Novamente
+            </button>
+          </div>
+
+          <div class="curiosities-card">
+            <h3 class="curiosities-title text-orange-dark">
+              <i class="fas fa-lightbulb"></i> Você Sabia?
+            </h3>
+            <div class="curiosities-grid">
+              <div class="curiosity-item">
+                <p class="text-orange-dark">
+                  🌾 O Brasil é um dos maiores produtores de soja do mundo
+                </p>
+              </div>
+              <div class="curiosity-item">
+                <p class="text-orange-dark">
+                  🏙️ Mais de 80% da população brasileira vive em áreas urbanas
+                </p>
+              </div>
+              <div class="curiosity-item">
+                <p class="text-orange-dark">
+                  🚜 A agricultura familiar produz 70% dos alimentos consumidos
+                  no país
+                </p>
+              </div>
+              <div class="curiosity-item">
+                <p class="text-orange-dark">
+                  💡 Tecnologias como GPS e drones revolucionaram a agricultura
+                  moderna
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Projeto Agrinho 2025</h3>
+            <p class="text-gray-light">
+              Celebrando a conexão fundamental entre o campo e a cidade,
+              promovendo educação, cultura e desenvolvimento sustentável.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Créditos</h3>
+            <div class="credits">
+              <p><strong>Aluno(a):</strong> Rafael Dombroski</p>
+              <p>
+                <strong>Escola:</strong> Colégio Estadual Francisco Neves Filho
+              </p>
+              <p><strong>Cidade:</strong> São João do Triunfo - PR</p>
+              <p><strong>Ano:</strong> 2025</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Links</h3>
+            <div class="footer-links">
+              <a href="#" class="footer-link text-green">
+                <i
+                  style="color: rgb(89, 182, 89)"
+                  class="fas fa-external-link-alt"
+                ></i>
+                <p style="color: rgb(89, 182, 89)">Projeto Agrinho Oficial</p>
+              </a>
+              <a
+                href="https://www.instagram.com/festadolavrador/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-link text-blue"
+              >
+                <i
+                  style="color: rgb(61, 102, 216)"
+                  class="fas fa-external-link-alt"
+                ></i>
+                <p style="color: rgb(61, 102, 216)">Festa do Lavrador 2025</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="text-gray-light">
+            Feito com <i class="fas fa-heart text-red"></i> para o Projeto
+            Agrinho 2025
+          </p>
+          <p class="text-gray-light">
+            Este site é um projeto educacional que celebra a união entre campo e
+            cidade.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
